@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: 4.1.1
+test:
+  override:
+    - npm run-script build
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./deploy.sh
