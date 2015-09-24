@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.7.1",
+    "coffee-script": "^1.9.2",
+    "coffeelint": "^1.9.2",
+    "connect-modrewrite": "^0.7.11",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-copy": "0.0.2",
+    "gulp-gzip": "^1.1.0",
+    "gulp-htmlmin": "^1.1.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-less": "^3.0.3",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.3.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.2.4",
+    "main-bower-files": "^2.7.1",
+    "matchdep": "^0.3.0",
+    "merge2": "^0.3.5",
+    "phantomjs": "^1.9.17",
+    "proxy-middleware": "^0.11.1",
+    "rimraf": "^2.3.3",
+    "run-sequence": "^1.1.0",
+    "underscore": "^1.8.3"
+  },
+  "dependencies": {
+    "bower": "^1.5.3",
+    "node-notifier": "^4.2.1"
+  },
+  "scripts": {
+    "install": "$(npm bin)/bower install --quiet",
+    "build": "$(npm bin)/gulp build"
+  }
+}
