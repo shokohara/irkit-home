@@ -8,16 +8,19 @@ head
     link(rel='stylesheet' type='text/css' href='/css/main.css')
     script(src='/js/main.js')
 body(ng-app='app' resize="resize")
+    - clientKey = (process.env.IRKIT_CLIENT_KEY)
+    - deviceId = (process.env.IRKIT_DEVICE_ID)
     nav.navbar.navbar-default
         .container
             .navbar-header
                 a.navbar-brand(href='' ui-sref='top') title
+            .navbar-right
+                div= gitHead
     .container
+        .text-right= process.env.GIT_HEAD
         .panel.panel-default
             .panel-heading エアコン
             .panel-body
-                - clientKey = (process.env.IRKIT_CLIENT_KEY)
-                - deviceId = (process.env.IRKIT_DEVICE_ID)
                 form(action="https://api.getirkit.com/1/messages" method="POST")
                     input(type="hidden" name="clientkey" value=clientKey)
                     input(type="hidden" name="deviceid" value=deviceId)

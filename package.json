@@ -38,6 +38,6 @@
   },
   "scripts": {
     "install": "$(npm bin)/bower install --quiet",
-    "build": "$(npm bin)/gulp build"
+    "build": "GIT_HEAD=$(git rev-parse HEAD) $(npm bin)/gulp build"
   }
 }
